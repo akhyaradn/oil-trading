@@ -1,6 +1,10 @@
 
-<h3 class="box-title m-b-0">News content</h3>
-<textarea name="news" id="news-tinymce"></textarea>
+<div class="form-group">
+    <div class="col-lg-12">
+        <label for="news">News content</label>
+        <textarea name="news" id="news-tinymce"></textarea>
+    </div>
+</div>
 
 @section('script')
 <script type="text/javascript">
