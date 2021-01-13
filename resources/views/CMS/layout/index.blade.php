@@ -44,6 +44,7 @@
                     <!-- /.col-lg-12 -->
                 </div>
             <!-- /.container-fluid -->
+            @yield('content')
             <footer class="footer text-center"> 2021 &copy; Prodigy </footer>
         </div>
         <!-- ============================================================== -->
