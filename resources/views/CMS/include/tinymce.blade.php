@@ -6,7 +6,7 @@
     </div>
 </div>
 
-@section('script')
+@push('script')
 <script type="text/javascript">
     $(document).ready(function() {
         tinymce.init({
@@ -21,4 +21,4 @@
         });
     });
 </script>
-@endsection
+@endpush

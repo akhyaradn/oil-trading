@@ -55,7 +55,7 @@
     <!-- All Jquery -->
     <!-- ============================================================== -->
     @include('CMS.layout.footer')
-    @yield('script')
+    @stack('script')
 </body>
 
 </html>
