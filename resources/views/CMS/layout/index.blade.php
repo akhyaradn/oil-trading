@@ -34,8 +34,7 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">@yield('title')</h4> 
-                    </div>
+                        <h4 class="page-title">@yield('title')</h4> </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <ol class="breadcrumb">
                             @yield('breadcrumb')
@@ -43,13 +42,11 @@
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
+                @yield('content')
+            </div>
             <!-- /.container-fluid -->
-            @yield('content')
             <footer class="footer text-center"> 2021 &copy; Prodigy </footer>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Page Content -->
-        <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
