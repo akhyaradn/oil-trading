@@ -12,7 +12,7 @@
 <!-- Custom tab JavaScript -->
 <script src="{{asset('CMS/js/cbpFWTabs.js')}}"></script>
 <!-- wysuhtml5 Plugin JavaScript -->
-<script src="{{asset('plugins/bower_components/tinymce/tinymce.min.js')}}"></script>
+<script src="{{asset('CMS/plugins/bower_components/tinymce/tinymce.min.js')}}"></script>
 <script type="text/javascript">
 (function() {
     [].slice.call(document.querySelectorAll('.sttabs')).forEach(function(el) {
