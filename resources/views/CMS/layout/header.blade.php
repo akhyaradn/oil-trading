@@ -18,6 +18,8 @@
     <link href="{{asset('CMS/css/colors/megna-dark.css')}}" id="theme" rel="stylesheet">
     <!-- Dropify -->
     <link rel="stylesheet" href="{{asset('CMS/plugins/bower_components/dropify/dist/css/dropify.min.css')}}">
+    <!-- Switchery -->
+    <link href="{{asset('CMS/plugins/bower_components/switchery/dist/switchery.min.css')}}" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

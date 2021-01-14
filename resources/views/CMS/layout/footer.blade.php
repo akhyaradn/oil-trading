@@ -22,3 +22,5 @@
 </script>
 <!-- jQuery file upload -->
 <script src="{{asset('CMS/plugins/bower_components/dropify/dist/js/dropify.min.js')}}"></script>
+<!-- Switchery -->
+<script src="{{asset('CMS/plugins/bower_components/switchery/dist/switchery.min.js')}}"></script>
