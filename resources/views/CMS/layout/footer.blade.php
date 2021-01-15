@@ -24,3 +24,13 @@
 <script src="{{asset('CMS/plugins/bower_components/dropify/dist/js/dropify.min.js')}}"></script>
 <!-- Switchery -->
 <script src="{{asset('CMS/plugins/bower_components/switchery/dist/switchery.min.js')}}"></script>
+
+<script type="text/javascript">
+function serializeInput(identifier) {
+    var values = {};
+    $.each($(identifier).serializeArray(), function(i, field) {
+        values[field.name] = field.value;
+    });
+    return values;
+}
+</script>

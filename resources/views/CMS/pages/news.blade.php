@@ -8,7 +8,7 @@
 
 @section('content')
 <div class="row">
-    <form action="POST" class="form-horizontal">
+    <form action="POST" class="form-horizontal" id="newscontent" name="submitnews">
         <div class="col-lg-10">
             <div class="white-box">
                 <div class="row">
@@ -32,3 +32,39 @@
     </from>
 </div>
 @endsection
+
+@push('script')
+<script>
+var map_fields = {
+    'news' : 'Content',
+    'judul' : 'Title',
+    'img' : 'Image'
+}
+
+$(document).ready(function(){
+    $("button[type=submit]").on('click', function(e){
+        e.preventDefault();
+        tinyMCE.triggerSave();
+        fields = serializeInput("#newscontent");
+        warning = '';
+
+        // Cek jika field konten, judul sudah terisi
+        for(i in fields) {
+            if(i != 'flag_active' && !fields[i]) {
+                warning += "- Field '" + map_fields[i] + "' invalid value!\n";
+            }
+        }
+
+        // Cek jika field img sudah terisi
+        fieldimg = document.getElementById('newsimg').files.length
+        if(!fieldimg) warning += "- Field 'Image' invalid value!\n";
+
+        if(warning) {
+            alert(warning);
+        } else {
+            document.submitnews.submit();
+        }
+    });
+});
+</script>
+@endpush
