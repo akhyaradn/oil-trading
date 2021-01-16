@@ -1,4 +1,4 @@
-<label for="input-file-now">News image cover</label>
+<label for="input-file-now">Image</label>
 <input type="file" name="img" id="newsimg" class="dropify"/>
 
 @push('script')

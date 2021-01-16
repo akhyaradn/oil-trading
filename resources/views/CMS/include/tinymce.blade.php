@@ -1,7 +1,7 @@
 
 <div class="form-group">
     <div class="col-lg-12">
-        <label for="news">News content</label>
+        <label for="news">Content</label>
         <textarea name="news" id="news-tinymce"></textarea>
     </div>
 </div>
