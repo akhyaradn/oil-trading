@@ -17,7 +17,7 @@ class CreateNewsTable extends Migration
             $table->id();
             $table->string('judul');
             $table->string('img');
-            $table->string('konten');
+            $table->longText('konten');
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
             $table->integer('id_penulis');
