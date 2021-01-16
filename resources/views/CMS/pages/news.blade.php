@@ -8,7 +8,8 @@
 
 @section('content')
 <div class="row">
-    <form action="POST" class="form-horizontal" id="newscontent" name="submitnews">
+    <form method="POST" class="form-horizontal" id="newscontent" name="submitnews" action="{{route('submitNews')}}" enctype="multipart/form-data">
+    {{csrf_field()}}
         <div class="col-lg-10">
             <div class="white-box">
                 <div class="row">
