@@ -33,4 +33,12 @@ function serializeInput(identifier) {
     });
     return values;
 }
+
+function serializeInputArray(identifier) {
+    var values = [];
+    values = $(identifier).map(function(){
+                return $(this).val();
+            }).get();
+    return values;
+}
 </script>
