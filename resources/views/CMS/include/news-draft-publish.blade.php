@@ -1,4 +1,4 @@
-<label for="">Publish news</label>
+<label for="">Publish</label>
 <br>
 <input type="checkbox" name="flag_active" checked class="js-switch"/>
 
