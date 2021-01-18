@@ -7,25 +7,38 @@
 @endsection
 
 @section('content')
+@if(session('success'))
+<div class="alert alert-success alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button> 
+    {{session('success')}}
+</div>
+@endif
+@if(session('failed'))
+<div class="alert alert-danger alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button> 
+    {{session('failed')}}
+</div>
+@endif
+
 <div class="row">
-    <form method="POST" class="form-horizontal" id="newscontent" name="submitnews" action="{{route('submitNews')}}" enctype="multipart/form-data">
+    <form method="POST" class="form-horizontal" id="newscontent" name="submitnews" action="{{route('submitNews')}}{{$news ? '/' . $news->id : ''}}" enctype="multipart/form-data">
     {{csrf_field()}}
         <div class="col-lg-10">
             <div class="white-box">
                 <div class="row">
-                    @include('CMS.include.news-title')
+                    @include('CMS.include.news-title', ['news' => $news])
                 </div>
                 <div class="row">
-                    @include('CMS.include.tinymce')
+                    @include('CMS.include.tinymce', ['news' => $news])
                 </div>
                 <div class="row">
-                    @include('CMS.include.news-image')
+                    @include('CMS.include.news-image', ['news' => $news])
                 </div>
             </div>
         </div>
         <div class="col-lg-2">
             <div class="white-box">
-                @include('CMS.include.news-draft-publish')  
+                @include('CMS.include.news-draft-publish', ['news' => $news])  
                 <br><br>
                 <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
             </div>

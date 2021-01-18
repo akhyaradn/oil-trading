@@ -2,7 +2,9 @@
 <div class="form-group">
     <div class="col-lg-12">
         <label for="news">Content</label>
-        <textarea name="news" id="news-tinymce"></textarea>
+        <textarea name="news" id="news-tinymce">
+            {{$news ? $news->konten : ""}}
+        </textarea>
     </div>
 </div>
 
