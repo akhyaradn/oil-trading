@@ -17,9 +17,12 @@ class ProductServiceController extends Controller
         ];
 
         if($id) {
+            $product_service = ProductService::where('id', $id)->first();
+            $area = ProductServiceArea::where('id_parent', $id)->orderBy('order')->get();
+
             $data = [
-                'product_service' => ProductService::where('id', $id)->first()->toArray(),
-                'area' => ProductServiceArea::where('id_parent', $id)->orderBy('order')->get()->toArray()
+                'product_service' => $product_service ? $product_service->toArray() : null,
+                'area' => $area ? $area->toArray() : null
             ];
         }
 
@@ -31,10 +34,14 @@ class ProductServiceController extends Controller
             $data = [
                 'judul' => $request->judul,
                 'paragraf_awal' => $request->paragraf_awal,
-                'paragraf_akhir' => $request->paragraf_akhir,
-                'flag_active' => $request->flag_active == 'on' ? 1 : 0
+                'paragraf_akhir' => $request->paragraf_akhir
             ];
-    
+
+            // Remove array key jika value tidak ada. Mencegah kolom di DB tdk terupdate dgn null
+            $data = array_filter($data, function($v){
+                if($v) return $v;
+            }, ARRAY_FILTER_USE_BOTH);
+
             $detail = [
                 'industry' => $request->industry,
                 'mining' => $request->mining,
@@ -42,10 +49,17 @@ class ProductServiceController extends Controller
                 'id_area' => $request->id_area
             ];
 
+            // Remove array key jika value tidak ada. Mencegah kolom di DB tdk terupdate dgn null
+            $detail = array_filter($detail, function($v){
+                if($v) return $v;
+            }, ARRAY_FILTER_USE_BOTH);
+
             if(!$id) {
                 // tambah field created_at & updated_at hanya utk insertgetid
                 $data['created_at'] = date("Y-m-d H:i:s");
                 $data['updated_at'] = date("Y-m-d H:i:s");
+                // tambah field flag_active
+                $data['flag_active'] = empty($request->flag_active) ? 0 : 1;
 
                 $id = DB::table('product_service')
                             ->insertGetId($data);
@@ -62,6 +76,8 @@ class ProductServiceController extends Controller
             } else {
                 // tambah field created_at & updated_at hanya utk insertgetid
                 $data['updated_at'] = date("Y-m-d H:i:s");
+                // tambah field flag_active
+                $data['flag_active'] = empty($request->flag_active) ? 0 : 1;
 
                 ProductService::where('id', $id)
                 ->update($data);
