@@ -20,6 +20,7 @@ class CreateProductServiceTable extends Migration
             $table->string('judul');
             $table->longText('paragraf_awal');
             $table->longText('paragraf_akhir');
+            $table->integer('flag_active');
         });
     }
 

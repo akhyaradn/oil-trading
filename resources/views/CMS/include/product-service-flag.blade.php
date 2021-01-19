@@ -1,6 +1,6 @@
 <label for="">Publish</label>
 <br>
-<input type="checkbox" name="flag_active" {{$news && $news['flag_active'] == 1 ? 'checked' : '' }} class="js-switch"/>
+<input type="checkbox" name="flag_active"  {{$product_service && $product_service['flag_active'] == 1 ? 'checked' : '' }}  class="js-switch"/>
 
 @push('script')
 <script>

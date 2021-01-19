@@ -26,3 +26,21 @@
 <script src="{{asset('CMS/plugins/bower_components/switchery/dist/switchery.min.js')}}"></script>
 <!-- Datatable -->
 <script src="{{ asset('CMS/plugins/bower_components/datatables/jquery.dataTables.min.js') }}"></script>
+
+<script type="text/javascript">
+function serializeInput(identifier) {
+    var values = {};
+    $.each($(identifier).serializeArray(), function(i, field) {
+        values[field.name] = field.value;
+    });
+    return values;
+}
+
+function serializeInputArray(identifier) {
+    var values = [];
+    values = $(identifier).map(function(){
+                return $(this).val();
+            }).get();
+    return values;
+}
+</script>

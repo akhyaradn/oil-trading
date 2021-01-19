@@ -15,6 +15,7 @@ class CreateProductServiceArea extends Migration
     {
         Schema::create('product_service_area', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_parent');
             $table->integer('order');
             $table->integer('industry');
             $table->integer('mining');
