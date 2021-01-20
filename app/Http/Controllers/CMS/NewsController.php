@@ -54,5 +54,101 @@ class NewsController extends Controller
             return redirect()->route("formNews", ['id' => $id])->with(['failed' => 'Failed to save '. $data['judul'] .'!']);
         }
     }
+
+    public function deleteNews($id, Request $request) {
+        try {
+            News::where('id', $id)->delete();
+            return redirect()->route("newsList")->with(['success' => 'Delete successfully!']);
+        } catch (\Exception $e) {
+            Log::error($e);
+            return redirect()->route("newsList")->with(['failed' => 'Delete failed!']);
+        }
+    }
+
+    public function newsList($flag = null, Request $request) {
+        if($flag != null) {
+            $flag = 'draft';
+        }
+
+        $data = [
+            'datatable_flag' => $flag
+        ];
+
+        return view('CMS.pages.news-list')->with($data);
+    }
+
+    public function datatableNews(Request $request) {
+        $flag = $_POST['flag'];
+
+        $totalData = $totalFiltered = News::where('flag_active', $flag)->count();
+
+        $limit = $request->input('length');
+
+        $start = $request->input('start');
+
+        if(empty($request->input('search.value'))) {
+
+            $news = News::where('flag_active', $flag)
+                        ->offset($start)
+                        ->limit($limit)
+                        ->get();
+
+        } else {
+
+        $search = $request->input('search.value'); 
+
+        $news = News::where('judul', 'like', "%{$search}%")
+                    ->where('flag_active', $flag)
+                    ->offset($start)
+                    ->limit($limit)
+                    ->get();
+
+        $totalFiltered = News::where('judul', 'like', "%{$search}%")
+                        ->where('flag_active', $flag)
+                        ->count();
+        }
+
+        $data = array();
+
+        if(!empty($news))
+        {
+            $i = $start + 1;
+
+            foreach ($news as $k)
+            {
+                $nestedData['no'] = $i;
+                $nestedData['judul'] = $k->judul;
+                //button modal detail channel
+                $nestedData['detail'] = 
+                '<a class="btn btn-xs btn-info" 
+                    href="'. route('formNews', ['id' => $k->id]) .'"
+                    target="_blank"
+                >Edit</a>';
+                // jarak button
+                $nestedData['detail'] .= 
+                '&nbsp;';
+                // button modal delete channel
+                $nestedData['detail'] .= "
+                    <a class='btn btn-xs btn-danger delete-news'
+                        data-id='{$k->id}'
+                        data-judul='{$k->judul}'
+                    >Delete</a>
+                ";
+                $data[] = $nestedData;
+
+                $i++;
+            }
+        }
+
+        $json_data = array(
+            "draw"            => intval($request->input('draw')),  
+            "recordsTotal"    => intval($totalData),  
+            "recordsFiltered" => intval($totalFiltered), 
+            "data"            => $data,
+            "id" => $request->id
+            );
+
+        echo json_encode($json_data);
+    }
 }
 ?>
