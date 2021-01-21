@@ -58,7 +58,7 @@ class NewsController extends Controller
     public function deleteNews($id, Request $request) {
         try {
             News::where('id', $id)->delete();
-            return redirect()->route("newsList")->with(['success' => 'Delete successfully!']);
+            return redirect()->route("newsList")->with(['success' => 'Deleted successfully!']);
         } catch (\Exception $e) {
             Log::error($e);
             return redirect()->route("newsList")->with(['failed' => 'Delete failed!']);
