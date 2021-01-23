@@ -101,5 +101,103 @@ class ProductServiceController extends Controller
             return redirect()->route("formProductService", ['id' => $id])->with(['failed' => 'Failed to save '. $data['judul'] .'!']);
         }
     }
+
+    public function deleteProductService($id, Request $request) {
+        try {
+            ProductService::where('id', $id)->delete();
+            return redirect()->route("productServiceList")->with(['success' => 'Deleted successfully!']);
+        } catch (\Exception $e) {
+            Log::error($e);
+            return redirect()->route("productServiceList")->with(['failed' => 'Delete failed!']);
+        }
+    }
+
+    public function productServiceList($flag = null, Request $request) {
+        if($flag != null) {
+            $flag = 'draft';
+        }
+
+        $data = [
+            'datatable_flag' => $flag
+        ];
+
+        return view('CMS.pages.productservice-list')->with($data);
+    }
+
+    public function datatableProductService(Request $request) {
+        $flag = $_POST['flag'];
+
+        $totalData = $totalFiltered = ProductService::where('flag_active', $flag)->count();
+
+        $limit = $request->input('length');
+
+        $start = $request->input('start');
+
+        if(empty($request->input('search.value'))) {
+
+            $productservice = ProductService::where('flag_active', $flag)
+                        ->orderBy('created_at', 'desc')
+                        ->offset($start)
+                        ->limit($limit)
+                        ->get();
+
+        } else {
+
+        $search = $request->input('search.value'); 
+
+        $productservice = ProductService::where('judul', 'like', "%{$search}%")
+                    ->where('flag_active', $flag)
+                    ->orderBy('created_at', 'desc')
+                    ->offset($start)
+                    ->limit($limit)
+                    ->get();
+
+        $totalFiltered = News::where('judul', 'like', "%{$search}%")
+                        ->where('flag_active', $flag)
+                        ->count();
+        }
+
+        $data = array();
+
+        if(!empty($productservice))
+        {
+            $i = $start + 1;
+
+            foreach ($productservice as $k)
+            {
+                $nestedData['no'] = $i;
+                $nestedData['judul'] = $k->judul;
+                //button modal detail channel
+                $nestedData['detail'] = 
+                '<a class="btn btn-xs btn-info" 
+                    href="'. route('formProductService', ['id' => $k->id]) .'"
+                    target="_blank"
+                >Edit</a>';
+                // jarak button
+                $nestedData['detail'] .= 
+                '&nbsp;';
+                // button modal delete channel
+                $nestedData['detail'] .= "
+                    <a class='btn btn-xs btn-danger delete-productservice'
+                        data-id='{$k->id}'
+                        data-judul='{$k->judul}'
+                    >Delete</a>
+                ";
+                $data[] = $nestedData;
+
+                $i++;
+            }
+        }
+
+        $json_data = array(
+            "draw"            => intval($request->input('draw')),  
+            "recordsTotal"    => intval($totalData),  
+            "recordsFiltered" => intval($totalFiltered), 
+            "data"            => $data,
+            "id" => $request->id
+            );
+
+        echo json_encode($json_data);
+    }
 }
 ?>

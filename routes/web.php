@@ -14,12 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Product & service
-Route::get('product-service/{id?}', 'App\Http\Controllers\CMS\ProductServiceController@formData')->name("formProductService");
-Route::post('product-service/submit/{id?}', 'App\Http\Controllers\CMS\ProductServiceController@submitProductService')->name("submitProductService");
+Route::prefix('cms')->group(function(){
+    Route::get('product-service/{flag?}', 'App\Http\Controllers\CMS\ProductServiceController@productServiceList')->name('productServiceList');
+    Route::get('product-service/detail/{id?}', 'App\Http\Controllers\CMS\ProductServiceController@formData')->name("formProductService");
+    Route::post('product-service/submit/{id?}', 'App\Http\Controllers\CMS\ProductServiceController@submitProductService')->name("submitProductService");
+    Route::post('product-service/delete/{id?}', 'App\Http\Controllers\CMS\ProductServiceController@deleteProductService')->name('deleteProductService');
+    Route::post('datatable-product-service', 'App\Http\Controllers\CMS\ProductServiceController@datatableProductService')->name('datatableProductService');
 
-// News
-Route::get('news/{flag?}', 'App\Http\Controllers\CMS\NewsController@newsList')->name('newsList');
-Route::get('news/detail/{id?}', 'App\Http\Controllers\CMS\NewsController@formData')->name('formNews');
-Route::post('news/submit/{id?}', 'App\Http\Controllers\CMS\NewsController@submitNews')->name('submitNews');
-Route::post('news/delete/{id?}', 'App\Http\Controllers\CMS\NewsController@deleteNews')->name('deleteNews');
-Route::post('datatable-news', 'App\Http\Controllers\CMS\NewsController@datatableNews')->name('datatableNews');
+    // News
+    Route::get('news/{flag?}', 'App\Http\Controllers\CMS\NewsController@newsList')->name('newsList');
+    Route::get('news/detail/{id?}', 'App\Http\Controllers\CMS\NewsController@formData')->name('formNews');
+    Route::post('news/submit/{id?}', 'App\Http\Controllers\CMS\NewsController@submitNews')->name('submitNews');
+    Route::post('news/delete/{id?}', 'App\Http\Controllers\CMS\NewsController@deleteNews')->name('deleteNews');
+    Route::post('datatable-news', 'App\Http\Controllers\CMS\NewsController@datatableNews')->name('datatableNews');
+});
