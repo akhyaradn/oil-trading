@@ -89,6 +89,7 @@ class NewsController extends Controller
         if(empty($request->input('search.value'))) {
 
             $news = News::where('flag_active', $flag)
+                        ->orderBy('created_at', 'desc')
                         ->offset($start)
                         ->limit($limit)
                         ->get();
@@ -99,6 +100,7 @@ class NewsController extends Controller
 
         $news = News::where('judul', 'like', "%{$search}%")
                     ->where('flag_active', $flag)
+                    ->orderBy('created_at', 'desc')
                     ->offset($start)
                     ->limit($limit)
                     ->get();
