@@ -8,6 +8,8 @@
     <title>Prodigy</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('CMS/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- datatable -->
+    <link rel="stylesheet" type="text/css"  href="{{ asset('CMS/plugins/bower_components/datatables/jquery.dataTables.min.css') }}">
     <!-- Menu CSS -->
     <link href="{{asset('CMS/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css')}}" rel="stylesheet">
     <!-- animation CSS -->
