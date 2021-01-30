@@ -10,13 +10,13 @@ use Log;
 
 class ProductServiceController extends Controller
 {
-    public function formData($id = null, Request $request) {
+    public function formData($id = 'new', Request $request) {
         $data = [
             'area' => null,
             'product_service' => null
         ];
 
-        if($id) {
+        if($id != 'new') {
             $product_service = ProductService::where('id', $id)->first();
             $area = ProductServiceArea::where('id_parent', $id)->orderBy('order')->get();
 
@@ -105,6 +105,8 @@ class ProductServiceController extends Controller
     public function deleteProductService($id, Request $request) {
         try {
             ProductService::where('id', $id)->delete();
+            ProductServiceArea::where('id_parent', $id)->delete();
+
             return redirect()->route("productServiceList")->with(['success' => 'Deleted successfully!']);
         } catch (\Exception $e) {
             Log::error($e);
@@ -152,7 +154,7 @@ class ProductServiceController extends Controller
                     ->limit($limit)
                     ->get();
 
-        $totalFiltered = News::where('judul', 'like', "%{$search}%")
+        $totalFiltered = ProductService::where('judul', 'like', "%{$search}%")
                         ->where('flag_active', $flag)
                         ->count();
         }

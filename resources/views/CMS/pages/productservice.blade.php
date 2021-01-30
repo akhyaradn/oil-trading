@@ -3,7 +3,8 @@
 @section('title', 'Add new product & service')
 
 @section('breadcrumb')
-<li class="active">Product & service</li>
+<li><a href="{{route('productServiceList')}}">Product & service</a></li>
+<li class="active">Form product & service</li>
 @endsection
 
 @section('content')
