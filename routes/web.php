@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function(){
+    return view("index2");
+});
+
 // Product & service
 Route::prefix('cms')->group(function(){
     Route::get('product-service/{flag?}', 'App\Http\Controllers\CMS\ProductServiceController@productServiceList')->name('productServiceList');
