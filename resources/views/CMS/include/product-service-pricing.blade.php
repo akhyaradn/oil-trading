@@ -19,7 +19,7 @@ function allowOnlyNumbers(event) {
         event.preventDefault();
     }
 
-    if(value.length <= 1 && event.key == 0) {
+    if(value.length < 1 && event.key == 0) {
         event.preventDefault();
     }
 }

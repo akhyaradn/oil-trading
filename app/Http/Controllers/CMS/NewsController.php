@@ -8,10 +8,10 @@ use Log;
 
 class NewsController extends Controller 
 {
-    public function formData($id = null, Request $request) {
+    public function formData($id = 'new', Request $request) {
         $news = null;
 
-        if($id) {
+        if($id != 'new') {
             $news = News::where('id', $id)->first();
         }
 
@@ -23,7 +23,7 @@ class NewsController extends Controller
         try {
             $data = [
                 'judul' => $request->judul,
-                'img' => $request->file('img')->getClientOriginalName(),
+                'img' => $request->img ? $request->file('img')->getClientOriginalName() : null,
                 'konten' => $request->news,
                 'id_penulis' => 1
             ];
@@ -42,10 +42,11 @@ class NewsController extends Controller
                 // tambah field flag_active
                 $data['flag_active'] = empty($request->flag_active) ? 0 : 1;
 
-                News::create($data);
+                $id = News::create($data);
+                $id = $id->id;
             }
 
-            if($data['img'])
+            if($request->img)
                 $request->file('img')->move('img_cover', $data['img']);
 
             return redirect()->route("formNews", ['id' => $id])->with(['success' => $data['judul'] . ' saved successfully!']);

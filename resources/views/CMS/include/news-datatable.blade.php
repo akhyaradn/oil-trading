@@ -1,9 +1,9 @@
 <table class="table table-bordered table-striped" id="data-table-news">
     <thead>
         <tr>
-            <th class="text-center" width="5%">#</th>
+            <th class="text-left" width="5%">#</th>
             <th class="text-left" width="85%">Title</th>
-            <th class="text-left" width="10%">Details</th>
+            <th class="text-left" width="10%">Action</th>
         </tr>
     </thead>
 </table>

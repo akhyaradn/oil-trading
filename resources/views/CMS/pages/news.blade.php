@@ -3,6 +3,7 @@
 @section('title', 'News editor')
 
 @section('breadcrumb')
+<li><a href="{{route('newsList')}}">News</a></li>
 <li class="active">News editor</li>
 @endsection
 
@@ -62,6 +63,9 @@ $(document).ready(function(){
         fields = serializeInput("#newscontent");
         warning = '';
 
+        // delete input status_img
+        delete fields['status_img'];
+
         // Cek jika field konten, judul sudah terisi
         for(i in fields) {
             if(i != 'flag_active' && !fields[i]) {
@@ -71,7 +75,8 @@ $(document).ready(function(){
 
         // Cek jika field img sudah terisi
         fieldimg = document.getElementById('newsimg').files.length
-        if(!fieldimg) warning += "- Field 'Image' invalid value!\n";
+        statusimg = $("input[name=status_img]").val();
+        if(!fieldimg && statusimg != 1) warning += "- Field 'Image' invalid value!\n";
 
         if(warning) {
             alert(warning);
