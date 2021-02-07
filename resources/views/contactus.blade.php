@@ -24,49 +24,59 @@
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
     <body>
-		<div class="main-container">
-            <div class="row pt-2 pb-2" style="border-bottom: 1px solid #a7a7a7;display: flex ;justify-content: center;align-items: center;position: sticky;top: 0;z-index: 40;background-color: #fff;">
-                <div class="col-md-4 col-xs-4">
-                    <div class=" text-center">
-                        <img src="image/logo-01.png" width="75%">
-                    </div>
-                </div>
-                <div class="col-md-6 offset-md-2 col-xs-8" style="display: flex;justify-content: center;align-items: center;">
-                    <div class="row pr-10">
-                        <a href="index.html" style="text-decoration: none;color: #777777;">
-                            <div class="text-center padding-menu-top">
-                                <span class="text-menu-top">Home</span>
-                            </div>
+		<div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(255,255,255,.7);">
+                <div class="container-fluid mx-md-5">
+                  <div class="navbar-brand" href="index.html" style="width: 15%">
+                    <img src="image/logo3.png" class="lebar-logo-menu">
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="index.html">
+                            <span class="text-menu-top">Home</span>
                         </a>
-                        <a href="aboutus.html" style="text-decoration: none;color: #777777;">
-                            <div class="text-center padding-menu-top">
-                                <span class="text-menu-top">About Us</span>
-                            </div>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="aboutus.html">
+                            <span class="text-menu-top">About Us</span>
                         </a>
-                        <a href="product.html" style="text-decoration: none;color: #777777;">
-                            <div class="text-center padding-menu-top">
-                                <span class="text-menu-top">Product & Service</span>
-                            </div>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="product.html">
+                            <span class="text-menu-top">Product & Service</span>
                         </a>
-                        <a href="news.html" style="text-decoration: none;color: #777777;">
-                            <div class="text-center padding-menu-top">
-                                <span class="text-menu-top">News</span>
-                            </div>
-                        </a> 
-                        <div class="text-center pr-0 padding-menu-top">
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="news.html">
+                            <span class="text-menu-top">News</span>
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="contactus.html">
                             <span class="text-menu-top">Contact Us</span>
-                        </div>
-                    </div>
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top d-none d-md-block" style="border-left: 1px solid #000;">
+                        <a class="nav-link" href="#">
+                            <span class="text-menu-top">EN  /  ID</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
+              </nav>
         </div>
         
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
             <div class="row text-left" style="position: relative;">
                 <img src="image/banner-contact.jpg" width="100%" alt="">
-                <div class="" style="position: absolute;bottom:10%;width: 100%;">
+                <div class="" style="position: absolute;bottom:15%;width: 100%;">
                     <div class="container">
-                        <div class="" style="color: #fff;font-size: 2.5rem;">
+                        <div class="" style="color: #fff;font-size: 2rem;">
                             <span style="font-weight: 700;">Contact Us</span>
                         </div>
                     </div>
@@ -129,15 +139,16 @@
                             </div>
                             <div class="col-12 col-md-4 pt-3">
                                 <span style="color: azure;font-size: 1rem;font-weight: 600;font-family: 'Lato', sans-serif;">Product & Service</span><br>
-                                <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">HSD (High Speed Diesel)</span><br>
+                                <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">Methanol</span><br>
                                 <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">DME (Dimethyl Ether)</span><br>
+                                <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">HSD (High Speed Diesel)</span><br>
                                 <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">LPG (Liquid Petroleum Gas)</span><br>
                                 <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">LFG (Liquified Natural Gas)</span><br>
                                 <!-- <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">LPG</span><br> -->
                             </div>
                             <div class="col-12 col-md-4 pt-3">
                                 <span style="color: azure;font-size: 1rem;font-weight: 600;font-family: 'Lato', sans-serif;">News</span><br>
-                                <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">Pertamina Economy Rate (B30)</span><br>
+                                <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">Pertamina Economy (B30)</span><br>
                             </div>
                             <!-- <div class="col-md-3 col-xs-6">
                                 <span style="color: azure;font-size: 1rem;font-weight: 600;font-family: 'Lato', sans-serif;">Contact Us</span><br>
@@ -187,7 +198,7 @@
                 </div>
                 <div class="row pt-3 pb-3 mx-0" style="border-top: 1px solid #fff;">
                     <div class="col-md-6 col-12 text-left">
-                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;">Copyright @ 2012 - PT Prodigy Energy Resources</span><br>
+                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;">Copyright @ 2021 - PT Prodigy Energy Resources</span><br>
                     </div>
                     <div class="col-md-6 col-12">
                         <div class="row py-2 text-center">
@@ -244,18 +255,19 @@
                 list-style: none;
             }
             .padding-menu-top{
-                padding-left: 20px;
-                padding-right: 20px
+                padding-left: 0.4rem;
+                padding-right: 0.4rem
             }
             .text-menu-top {
-                font-size: 1rem;
-                font-weight: 700;
+                font-size: 0.9rem;
+                font-weight: 300;
                 font-family: 'Lato', sans-serif;
+                color: #fff;
             }
             .title-text-slider{
                 font-size: 2.5rem;
                 font-weight: 700;
-                color: #fff;
+                color: #000;
                 font-family: 'Lato', sans-serif;
                 line-height: 2.5rem;
             }
@@ -267,10 +279,21 @@
                 line-height: 2.5rem;
             }
             .text-slider-position{
-                top: 40%;
+                top: 30%;
                 width: 100%;
                 position: absolute;
                 z-index: 5;
+            }
+            .arrow-slider {
+                font-size: 2.5rem;
+                color: #fff;
+            }
+
+            .lebar-logo-menu{
+                width: 50%;
+            }
+            .bg-putih-menu{
+                background-color: rgba(255,255,255,.4);
             }
 
             @media (max-width: 500px) {
@@ -282,6 +305,7 @@
                     font-size: 0.8rem;
                     font-weight: 700;
                     font-family: 'Lato', sans-serif;
+                    color: #fff;
                 }
                 .title-text-slider{
                     font-size: 1.5rem;
@@ -303,8 +327,16 @@
                     position: absolute;
                     z-index: 5;
                 }
+                .arrow-slider {
+                    font-size: 1rem;
+                    color: #fff;
+                }
+                .lebar-logo-menu{
+                    width: 100%;
+                }
             }
         </style>
+
 
         <script>
             var slideIndex = 1;

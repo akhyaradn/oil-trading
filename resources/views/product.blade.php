@@ -29,47 +29,57 @@
         <script src="https://www.rumahhosting.com/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-		<div class="main-container">
-            <div class="row" style="border-bottom: solid 1px #c7c7c7;display: flex ;justify-content: center;align-items: center;position: sticky;top: 0;z-index: 40;background-color: #fff;">
-            <div class="col-md-4">
-                <div class="pt-2 pb-2 text-center">
-                    <img src="image/logo-01.png" width="75%">
-                </div>
-            </div>
-            <div class="col-md-6 offset-md-2 col-xs-8" style="display: flex;justify-content: center;align-items: center;">
-                <div class="row pr-10">
-                    <a href="index.html" style="text-decoration: none;color: #777777;">
-                    <div class="text-center padding-menu-top">
-                        <span class="text-menu-top">Home</span>
-                    </div>
-                    </a>
-                    <a href="aboutus.html" style="text-decoration: none;color: #777777;">
-                        <div class="text-center padding-menu-top">
+		<div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(255,255,255,.7);">
+                <div class="container-fluid mx-md-5">
+                  <div class="navbar-brand" href="index.html" style="width: 15%">
+                    <img src="image/logo3.png" class="lebar-logo-menu">
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="index.html">
+                            <span class="text-menu-top">Home</span>
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="aboutus.html">
                             <span class="text-menu-top">About Us</span>
-                        </div>
-                    </a>
-                    <div class="text-center padding-menu-top">
-                        <span class="text-menu-top">Product & Service</span>
-                    </div>
-                    <a href="news.html" style="text-decoration: none;color: #777777;">
-                        <div class="text-center padding-menu-top">
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="product.html">
+                            <span class="text-menu-top">Product & Service</span>
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="news.html">
                             <span class="text-menu-top">News</span>
-                        </div>
-                    </a>
-                    <a href="contactus.html" style="text-decoration: none;color: #777777;">
-                        <div class="text-center pr-0 padding-menu-top">
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="contactus.html">
                             <span class="text-menu-top">Contact Us</span>
-                        </div>
-                    </a>
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top d-none d-md-block" style="border-left: 1px solid #000;">
+                        <a class="nav-link" href="#">
+                            <span class="text-menu-top">EN  /  ID</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
-            </div>
-				<div class="container-fluid">
+              </nav>
+				<div class="container-fluid p-0">
                     <div class="row text-left" style="position: relative;">
                         <img src="image/banner-product.jpg" width="100%" alt="">
-                        <div class="" style="position: absolute;bottom:10%;width: 100%;">
+                        <div class="" style="position: absolute;bottom:15%;width: 100%;">
                             <div class="container">
-                                <div class="mx-5" style="color: #fff;font-size: 2.5rem;">
+                                <div class="mx-5" style="color: #fff;font-size: 2rem;">
                                     <span style="font-weight: 700;">Product & Service</span>
                                 </div>
                             </div>
@@ -77,15 +87,71 @@
                     </div>
                     <div class="container">
                         <div class="row mt-5 mb-5 mx-5">
-                            <div class="col-md-12" style="border-bottom: 2px solid #a7a7a7;">
+                            <div class="" style="border-bottom: 2px solid #a7a7a7;">
+                                <span style="font-size: 1.7rem;font-weight: 700;font-family: 'Lato', sans-serif;">Methanol</span>
+                            </div>
+                            <div class="row mt-3">
+                                <!-- <div class="col-md-4">
+                                    <img src="image/HSD.jpeg" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25)" alt="">
+                                </div> -->
+                                <div class="col-12" style="text-align: justify;align-items: center;">
+                                    <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">Methanol is an alternative biofuel for internal combustion and other engines, either in combination with gasoline or independently. Methanol (CH3OH) is less expensive to produce sustainably than ethanol fuel, although it is generally more toxic and has lower energy density.</span><br><br>
+                                    <!-- <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">Through official appointment from PT Pertamina Patra Niaga with Agreement No.346/PPNPPN20000.340/KTR/2020,  PT Prodigy Energy Resources is authorized to do retail distribution for various fuel products, such as Biodiesel Fuel Oil (B30) . Marine Fuel Oil ( MFO) and other high quality products from Pertamina.</span><br><br> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-5 mx-5">
+                            <div class="" style="border-bottom: 2px solid #a7a7a7;">
+                                <span style="font-size: 1.7rem;font-weight: 700;font-family: 'Lato', sans-serif;">DME (Dimethyl ether)</span>
+                            </div>
+                            <div class="row mt-3">
+                                <!-- <div class="col-md-4">
+                                    <img src="image/HSD.jpeg" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25)" alt="">
+                                </div> -->
+                                <div class="col-12" style="text-align: justify;align-items: center;">
+                                    <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">DME (Dimethyl ether) known as methoxymethane is the organic compound with the formula CH3OCH3, simplified to C2H6O. The simplest ether, it is a colorless gas that is a useful precursor to other organic compounds and an aerosol propellant that is currently being demonstrated for use in a variety of fuel applications. It is an isomer of ethanol.</span><br><br>
+                                    <!-- <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">Through official appointment from PT Pertamina Patra Niaga with Agreement No.346/PPNPPN20000.340/KTR/2020,  PT Prodigy Energy Resources is authorized to do retail distribution for various fuel products, such as Biodiesel Fuel Oil (B30) . Marine Fuel Oil ( MFO) and other high quality products from Pertamina.</span><br><br> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-5 mx-5">
+                            <div class="" style="border-bottom: 2px solid #a7a7a7;">
                                 <span style="font-size: 1.7rem;font-weight: 700;font-family: 'Lato', sans-serif;">High Speed Diesel (HSD)</span>
                             </div>
                             <div class="row mt-3">
-                                <div class="col-md-4">
+                                <!-- <div class="col-md-4">
                                     <img src="image/HSD.jpeg" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25)" alt="">
-                                </div>
-                                <div class="col-md-8" style="text-align: justify;align-items: center;">
+                                </div> -->
+                                <div class="col-12" style="text-align: justify;align-items: center;">
                                     <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">High Speed ​​Diesel (HSD) is one of the fuel brands that has a solar system capable of performing the number 45, which is a fuel device used to transport immersed gasoline engines with an injection pump system and electronic injection, namely a vehicle for industrial fuel for motor vehicles and machine.</span><br><br>
+                                    <!-- <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">Through official appointment from PT Pertamina Patra Niaga with Agreement No.346/PPNPPN20000.340/KTR/2020,  PT Prodigy Energy Resources is authorized to do retail distribution for various fuel products, such as Biodiesel Fuel Oil (B30) . Marine Fuel Oil ( MFO) and other high quality products from Pertamina.</span><br><br> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-5 mx-5">
+                            <div class="" style="border-bottom: 2px solid #a7a7a7;">
+                                <span style="font-size: 1.7rem;font-weight: 700;font-family: 'Lato', sans-serif;">LPG (liquified Petroleum gas)</span>
+                            </div>
+                            <div class="row mt-3">
+                                <!-- <div class="col-md-4">
+                                    <img src="image/HSD.jpeg" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25)" alt="">
+                                </div> -->
+                                <div class="col-12" style="text-align: justify;align-items: center;">
+                                    <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">LPG (liquified Petroleum gas) increasing the pressure and lowering the temperature, the gas turns into a liquid. Its components are predominantly propane (C3H8) and butane (C4H10). LPG also contains small amounts of other light hydrocarbons, for example ethane (C2H6) and pentane (C5H12).</span><br><br>
+                                    <!-- <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">Through official appointment from PT Pertamina Patra Niaga with Agreement No.346/PPNPPN20000.340/KTR/2020,  PT Prodigy Energy Resources is authorized to do retail distribution for various fuel products, such as Biodiesel Fuel Oil (B30) . Marine Fuel Oil ( MFO) and other high quality products from Pertamina.</span><br><br> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-5 mx-5">
+                            <div class="" style="border-bottom: 2px solid #a7a7a7;">
+                                <span style="font-size: 1.7rem;font-weight: 700;font-family: 'Lato', sans-serif;">LNG (Liquefied natural gas)</span>
+                            </div>
+                            <div class="row mt-3">
+                                <!-- <div class="col-md-4">
+                                    <img src="image/HSD.jpeg" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25)" alt="">
+                                </div> -->
+                                <div class="col-12" style="text-align: justify;align-items: center;">
+                                    <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">LNG (Liquefied natural gas) is natural gas (predominantly methane, CH4, with some mixture of ethane, C2H6) that has been cooled down to liquid form for ease and safety of non-pressurized storage or transport. It takes up about 1/600th the volume of natural gas in the gaseous state.</span><br><br>
                                     <!-- <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">Through official appointment from PT Pertamina Patra Niaga with Agreement No.346/PPNPPN20000.340/KTR/2020,  PT Prodigy Energy Resources is authorized to do retail distribution for various fuel products, such as Biodiesel Fuel Oil (B30) . Marine Fuel Oil ( MFO) and other high quality products from Pertamina.</span><br><br> -->
                                 </div>
                             </div>
@@ -107,15 +173,16 @@
                                     </div>
                                     <div class="col-12 col-md-4 pt-3">
                                         <span style="color: azure;font-size: 1rem;font-weight: 600;font-family: 'Lato', sans-serif;">Product & Service</span><br>
-                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">HSD (High Speed Diesel)</span><br>
+                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">Methanol</span><br>
                                         <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">DME (Dimethyl Ether)</span><br>
+                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">HSD (High Speed Diesel)</span><br>
                                         <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">LPG (Liquid Petroleum Gas)</span><br>
                                         <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">LFG (Liquified Natural Gas)</span><br>
                                         <!-- <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">LPG</span><br> -->
                                     </div>
                                     <div class="col-12 col-md-4 pt-3">
                                         <span style="color: azure;font-size: 1rem;font-weight: 600;font-family: 'Lato', sans-serif;">News</span><br>
-                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">Pertamina Economy Rate (B30)</span><br>
+                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">Pertamina Economy (B30)</span><br>
                                     </div>
                                     <!-- <div class="col-md-3 col-xs-6">
                                         <span style="color: azure;font-size: 1rem;font-weight: 600;font-family: 'Lato', sans-serif;">Contact Us</span><br>
@@ -165,7 +232,7 @@
                         </div>
                         <div class="row pt-3 pb-3 mx-0" style="border-top: 1px solid #fff;">
                             <div class="col-md-6 col-12 text-left">
-                                <span style="color: azure;font-size: 0.8rem;font-weight: 300;">Copyright @ 2012 - PT Prodigy Energy Resources</span><br>
+                                <span style="color: azure;font-size: 0.8rem;font-weight: 300;">Copyright @ 2021 - PT Prodigy Energy Resources</span><br>
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="row py-2 text-center">
@@ -222,18 +289,19 @@
                         list-style: none;
                     }
                     .padding-menu-top{
-                        padding-left: 20px;
-                        padding-right: 20px
+                        padding-left: 0.4rem;
+                        padding-right: 0.4rem
                     }
                     .text-menu-top {
-                        font-size: 1rem;
-                        font-weight: 700;
+                        font-size: 0.9rem;
+                        font-weight: 300;
                         font-family: 'Lato', sans-serif;
+                        color: #fff;
                     }
                     .title-text-slider{
                         font-size: 2.5rem;
                         font-weight: 700;
-                        color: #fff;
+                        color: #000;
                         font-family: 'Lato', sans-serif;
                         line-height: 2.5rem;
                     }
@@ -245,10 +313,21 @@
                         line-height: 2.5rem;
                     }
                     .text-slider-position{
-                        top: 40%;
+                        top: 30%;
                         width: 100%;
                         position: absolute;
                         z-index: 5;
+                    }
+                    .arrow-slider {
+                        font-size: 2.5rem;
+                        color: #fff;
+                    }
+        
+                    .lebar-logo-menu{
+                        width: 50%;
+                    }
+                    .bg-putih-menu{
+                        background-color: rgba(255,255,255,.4);
                     }
         
                     @media (max-width: 500px) {
@@ -260,6 +339,7 @@
                             font-size: 0.8rem;
                             font-weight: 700;
                             font-family: 'Lato', sans-serif;
+                            color: #fff;
                         }
                         .title-text-slider{
                             font-size: 1.5rem;
@@ -281,8 +361,16 @@
                             position: absolute;
                             z-index: 5;
                         }
+                        .arrow-slider {
+                            font-size: 1rem;
+                            color: #fff;
+                        }
+                        .lebar-logo-menu{
+                            width: 100%;
+                        }
                     }
                 </style>
+        
 
         <script>
             var slideIndex = 1;

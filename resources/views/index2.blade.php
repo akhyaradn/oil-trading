@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -12,108 +13,74 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="https://www.rumahhosting.com/assets/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="navbar.css" rel="stylesheet" type="text/css" media="all"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,900;1,800&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">   
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
         <!-- <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" type="text/css" media="all"/> -->
-        <link href="https://www.rumahhosting.com/assets/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="https://www.rumahhosting.com/assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <!-- <link href="https://www.rumahhosting.com/assets/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="https://www.rumahhosting.com/assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/> -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="https://www.rumahhosting.com/assets/css/theme-blues.css" rel="stylesheet" type="text/css" media="all"/>
+        <!-- <link href="https://www.rumahhosting.com/assets/css/theme-blues.css" rel="stylesheet" type="text/css" media="all"/> -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
-        <script src="https://www.rumahhosting.com/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!-- <script src="https://www.rumahhosting.com/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
     </head>
-    <body>
-		<div class="container-fluid">
-            <div class="row pt-3 pb-3" style="display: flex ;justify-content: flex-start;align-items: center;position: sticky;top: 0;z-index: 40;background-color: #fff;">
-            <div class="col-xs-4 col-4">
-                <div class=" text-center">
-                    <img src="{{asset('asset/image/logo-01.png')}}" width="70%">
-                </div>
-            </div>
-            <div class="col-md-6 offset-md-2 col-xs-8" style="display: flex;justify-content: center;align-items: center;">
-                <div class="row pr-10">
-                    <div class="text-center padding-menu-top">
-                        <span class="text-menu-top">Home</span>
-                    </div>
-                    <a href="aboutus.html" style="text-decoration: none;color: #777777;">
-                        <div class="text-center padding-menu-top">
+    <body style="">
+		<div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(255,255,255,.7);">
+                <div class="container-fluid mx-md-5">
+                  <div class="navbar-brand" href="index.html" style="width: 15%">
+                    <img src="image/logo3.png" class="lebar-logo-menu">
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="index.html">
+                            <span class="text-menu-top">Home</span>
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="aboutus.html">
                             <span class="text-menu-top">About Us</span>
-                        </div>
-                    </a>
-                    <a href="product.html" style="text-decoration: none;color: #777777;">
-                        <div class="text-center padding-menu-top">
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="product.html">
                             <span class="text-menu-top">Product & Service</span>
-                        </div>
-                    </a>
-                    <a href="news.html" style="text-decoration: none;color: #777777;">
-                        <div class="text-center padding-menu-top">
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="news.html">
                             <span class="text-menu-top">News</span>
-                        </div>
-                    </a>
-                    <a href="contactus.html" style="text-decoration: none;color: #777777;">
-                        <div class="text-center padding-menu-top" style="border-right: 1px solid #a7a7a7;">
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top">
+                        <a class="nav-link" href="contactus.html">
                             <span class="text-menu-top">Contact Us</span>
-                        </div>
-                    </a>
-                    <div class="text-center pr-0 padding-menu-top">
-                        <span class="text-menu-top">EN  /  ID</span>
-                    </div>
+                        </a>
+                      </li>
+                      <li class="nav-item padding-menu-top d-none d-md-block" style="border-left: 1px solid #000;">
+                        <a class="nav-link" href="#">
+                            <span class="text-menu-top">EN  /  ID</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
-            </div>
-                <!-- <div class="container py-2 px-5">
-                    <div class="row" style="justify-content: center;">
-                        <div class="text-center" style="padding-left: 20px;padding-right: 20px;">
-                            <span style="font-size: 1rem;font-weight: 700;font-family: 'Lato', sans-serif;">Home</span>
-                        </div>
-                        <div class="text-center" style="padding-left: 20px;padding-right: 20px;">
-                            <span style="font-size: 1rem;font-weight: 700;font-family: 'Lato', sans-serif;">About Us</span>
-                        </div>
-                        <div class="text-center" style="padding-left: 20px;padding-right: 20px;">
-                            <span style="font-size: 1rem;font-weight: 700;font-family: 'Lato', sans-serif;">Product</span>
-                        </div>
-                        <div class="text-center" style="padding-left: 20px;padding-right: 20px;">
-                            <span style="font-size: 1rem;font-weight: 700;font-family: 'Lato', sans-serif;">News</span>
-                        </div>
-                        <div class="text-center pr-0" style="padding-left: 20px;padding-right: 20px;">
-                            <span style="font-size: 1rem;font-weight: 700;font-family: 'Lato', sans-serif;">Contact Us</span>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-                    <div class="container">
-                      <a class="navbar-brand" href="#">Start Bootstrap</a>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Sign Up</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Log In</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav> -->
-                <div class="" style="position: relative;">
-                        <!-- <div class="text-center" style="align-items: center;justify-content: center;position: absolute;z-index: 5;">
-                            <span style="font-size: 2.5rem;font-weight: 700;color: #fff;font-family: 'Lato', sans-serif;">Fuel Supply</span><br><br>
-                            <span style="font-size: 2.5rem;font-weight: 700;color: #fff;font-family: 'Lato', sans-serif;">Distributor Nationwide</span><br><br>
-                            <span style="font-size: 1.2rem;font-weight: 400;color: #fff;font-family: 'Lato', sans-serif;">PT Prodigy Energy Resources offers solutions for</span><br>
-                            <span style="font-size: 1.2rem;font-weight: 400;color: #fff;font-family: 'Lato', sans-serif;">fuel distribution for industrial needs so that your</span><br>
-                            <span style="font-size: 1.2rem;font-weight: 400;color: #fff;font-family: 'Lato', sans-serif;">business can work optimally</span><br>
-                        </div>
-                        <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div>
-                    <img src="hero2.jpeg" width="100%" height="75vh" style="object-fit: cover;height: 80vh;"> -->
+              </nav>
+                <!-- <div class="" style="position: relative;">
                     <div class="row">
                         <div class="w3-button w3-display-left arrow-slider" onclick="plusDivs(-1)" style="position: absolute;top: 45%;left: 1%;cursor: pointer;z-index: 6;"><i class="fas fa-angle-left"></i></div>
                         <div class="mySlides container-fluid text-center p-0" style="position: relative;">
@@ -125,9 +92,9 @@
                                 <span class="content-text-slider">business can work optimally</span><br>
                             </div>
                             <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div>
-                            <img class="" src="{{asset('asset/image/image13.jpg')}}" width="100%" style="max-height: 90vh;object-fit: cover;">
+                            <img class="" src="image/slide1.jpg" width="100%" style="max-height: 100vh;object-fit: cover;">
                         </div>
-                        <div class="mySlides container-fluid text-center p-0">
+                        <div class="mySlides container-fluid text-center p-0" style="position: relative;">
                             <div class="text-center text-slider-position col-xs-12">
                                 <span class="title-text-slider">Energy Distribution</span><br>
                                 <span class="title-text-slider">& Logistic</span><br><br>
@@ -135,34 +102,105 @@
                                 <span class="content-text-slider">From Depot To All Corners Of The Nation</span><br>
                             </div>
                             <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div> 
-                            <img class="" src="{{asset('asset/image/image3.jpeg')}}" width="100%" style="max-height: 90vh;object-fit: cover;">
+                            <img class="" src="image/slide2.jpg" width="100%" style="max-height: 100vh;object-fit: cover;">
                         </div>
-                        <!-- <img class="mySlides" src="hero1.png" width="100%" style="max-height: 80vh;object-fit: cover;">
-                        <img class="mySlides" src="https://blog.tripcetera.com/id/wp-content/uploads/2020/10/Danau-Toba-edited.jpg" width="100%" style="max-height: 80vh;object-fit: cover;">
-                        <img class="mySlides" src="https://klikhijau.com/wp-content/uploads/2020/09/Catat-Ini-Tempat-Wisata-Indonesia-dengan-Pemandangan-Alam-Menakjubkan.jpg" width="100%" style="max-height: 80vh;object-fit: cover;">          -->
+                        <div class="mySlides container-fluid text-center p-0 animate fade-in" style="position: relative;">
+                            <div class="text-center text-slider-position col-xs-12">
+                                <span class="title-text-slider">Energy Distribution</span><br>
+                                <span class="title-text-slider">& Logistic</span><br><br>
+                                <span class="content-text-slider">Professional and Competent In Fuel Logistics and Distribution Services</span><br>
+                                <span class="content-text-slider">From Depot To All Corners Of The Nation</span><br>
+                            </div>
+                            <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div> 
+                            <img class="" src="image/slide3.jpg" width="100%" style="max-height: 100vh;object-fit: cover;">
+                        </div>
                         <div class="w3-div w3-display-right arrow-slider" onclick="plusDivs(+1)" style="position: absolute;top: 45%;right: 1%;cursor: pointer;z-index: 6;"><i class="fas fa-angle-right"></i></div>
+                        <div class="row text-center" style="position: absolute;bottom: 10%;left: 48%;;cursor: pointer;z-index: 7;">
+                            <div class="p-1"><i class="fas fa-circle w3-button demo pagination" onclick="currentDiv(1)"></i></div>
+                            <div class="p-1"><i class="fas fa-circle w3-button demo pagination" onclick="currentDiv(2)"></i></div>
+                            <div class="p-1"><i class="fas fa-circle w3-button demo pagination" onclick="currentDiv(3)"></i></div>
+                        </div> 
                     </div>
-                </div>
+                </div> -->
                 
-                <div class="container mt-5 mb-5 d-none d-md-block">
-					<div class="row mx-5" style="display: flex;align-items: center;">
-                        <div class="col-md-5 col-xs-12">
-                            <img src="{{asset('asset/image/image12.jpg')}}" width="100%" alt="" style="box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);border-radius: 12px;">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" style="max-height: 100vh;object-fit: cover;">
+                      <div class="carousel-item active">
+                        <div class="text-center text-slider-position col-xs-12 animate__animated animate__fadeInDown animate__delay-1s row">
+                            <div class="col-10">
+                                <p class="title-text-slider">INTEGRATED ENERGY SUPPLY</p>
+                                <p class="content-text-slider">Providing Better Energy Solution Worldwide</p>
+                            </div>
                         </div>
-						<div class="col-md-7 pt-3 col-xs-12" style="box-shadow: -1px 0 24px 0 rgba(0,0,0,.25)">
-                            <!-- <img src="logo-prodigy.png" width="50%"><br><br> -->
-                            <span style="font-size: 1.7rem;font-weight: 700;font-family: 'Lato', sans-serif;">About Prodigy</span><br><br>
-							<span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">PT PRODIGY ENERGY RESOURCES is private trading company primarily engaged in the energy field, with business units in fuel management, distribution service and integrated supply chain solution. Our company offers a full-service portfolio for fuel supply distribution for clients of all scales nationwide.</span><br><br>
-                            <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">Through official appointment from PT Pertamina Patra Niaga with Agreement No.346/PPNPPN20000.340/KTR/2020,  PT Prodigy Energy Resources is authorized to do retail distribution for various fuel products, such as Biodiesel Fuel Oil (B30) . Marine Fuel Oil ( MFO) and other high quality products from Pertamina.</span><br><br>
-                            <!-- <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">We aim  to be at the forefront of the energy trading revolution, by providing excellent service and efficient supply chain management to ensure most beneficial business solutions for our customers.</span><br> -->
-						</div>
+                        <!-- <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div> -->
+                        <img class="d-block w-100" src="image/slide1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <div class="text-center text-slider-position col-xs-12 animate__animated animate__fadeInDown animate__delay-1s">
+                            <span class="title-text-slider">EFFICIENT</span><br><br>
+                        </div>
+                        <!-- <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div> -->
+                        <img class="d-block w-100" src="image/slide2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <div class="text-center text-slider-position col-xs-12 animate__animated animate__fadeInDown animate__delay-1s">
+                            <span class="title-text-slider">RELIABLE</span><br><br>
+                        </div>
+                        <!-- <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div> -->
+                        <img class="d-block w-100" src="image/slide3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                
+                
+                <div class="container-fluid p-0 d-none d-md-block">
+					      <div class="row" style="display: flex;align-items: center;">
+                        <div class="col-6">
+                            <img src="image/image12.jpg" width="100%" alt="" style="">
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-2 pt-1 text-right">
+                                    <i class="fas fa-caret-right" style="font-size: 3rem;color: #024086;"></i>
+                                </div>
+                                <div class="col-8 pt-1 col-xs-12" style="">
+                                    <!-- <img src="logo-prodigy.png" width="50%"><br><br> -->
+                                    <span style="font-size: 1.7rem;font-weight: 700;font-family: 'Lato', sans-serif;">About Us</span>
+                                    <!-- <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">We aim  to be at the forefront of the energy trading revolution, by providing excellent service and efficient supply chain management to ensure most beneficial business solutions for our customers.</span><br> -->
+                                </div>
+                            </div>
+                            <div class="row text-left my-1">
+                              <div class="col-8 offset-2">
+                                <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">PT PRODIGY ENERGY RESOURCES is private trading company primarily engaged in the energy field, with business units in fuel management, distribution service and integrated supply chain solution. Our company offers a full-service portfolio for fuel supply distribution for clients of all scales nationwide.</span><br><br>
+                                <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">Through official appointment from PT Pertamina Patra Niaga with Agreement No.346/PPNPPN20000.340/KTR/2020,  PT Prodigy Energy Resources is authorized to do retail distribution for various fuel products, such as Biodiesel Fuel Oil (B30) . Marine Fuel Oil ( MFO) and other high quality products from Pertamina.</span><br><br> 
+                                <a href="aboutus.html">
+                                    <button class="py-2" style="width: 30%;background-color: #024086;color: #fff;border-radius: 12px;">
+                                     <span style="font-size: 1rem;font-weight: 700;font-family: 'Montserrat', sans-serif;">Read More</span>
+                                    </button>
+                                </a>
+                              </div>
+                            </div>
+                        </div>
 					</div><!--end of row-->
                 </div><!--end of container-->
                 
                 <div class="container-fluid mt-5 mb-5 d-block d-md-none">
 					<div class="row" style="display: flex;align-items: center;">
                         <div class="col-md-5 col-xs-12 mb-2">
-                            <img src="{{asset('asset/image/image12.jpg')}}" width="100%" alt="" style="box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);border-radius: 12px;">
+                            <img src="image/image12.jpg" width="100%" alt="" style="box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);border-radius: 12px;">
                         </div>
 						<div class="col-md-7 pt-3 col-xs-12" style="box-shadow: -1px 0 24px 0 rgba(0,0,0,.25)">
                             <!-- <img src="logo-prodigy.png" width="50%"><br><br> -->
@@ -188,15 +226,16 @@
                                     </div>
                                     <div class="col-12 col-md-4 pt-3">
                                         <span style="color: azure;font-size: 1rem;font-weight: 600;font-family: 'Lato', sans-serif;">Product & Service</span><br>
-                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">HSD (High Speed Diesel)</span><br>
+                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">Methanol</span><br>
                                         <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">DME (Dimethyl Ether)</span><br>
+                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">HSD (High Speed Diesel)</span><br>
                                         <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">LPG (Liquid Petroleum Gas)</span><br>
                                         <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">LFG (Liquified Natural Gas)</span><br>
                                         <!-- <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">LPG</span><br> -->
                                     </div>
                                     <div class="col-12 col-md-4 pt-3">
                                         <span style="color: azure;font-size: 1rem;font-weight: 600;font-family: 'Lato', sans-serif;">News</span><br>
-                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">Pertamina Economy Rate (B30)</span><br>
+                                        <span style="color: azure;font-size: 0.8rem;font-weight: 300;font-family: 'Lato', sans-serif;">Harga Perekonomian Pertamina (B30)</span><br>
                                     </div>
                                     <!-- <div class="col-md-3 col-xs-6">
                                         <span style="color: azure;font-size: 1rem;font-weight: 600;font-family: 'Lato', sans-serif;">Contact Us</span><br>
@@ -246,7 +285,7 @@
                         </div>
                         <div class="row pt-3 pb-3 mx-0" style="border-top: 1px solid #fff;">
                             <div class="col-md-6 col-12 text-left">
-                                <span style="color: azure;font-size: 0.8rem;font-weight: 300;">Copyright @ 2012 - PT Prodigy Energy Resources</span><br>
+                                <span style="color: azure;font-size: 0.8rem;font-weight: 300;">Copyright @ 2021 - PT Prodigy Energy Resources</span><br>
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="row py-2 text-center">
@@ -272,7 +311,10 @@
                 </div>
 
         <style>
-            .mySlides {display:none;}
+            .mySlides {
+                display:none;
+                scroll-behavior: smooth;
+            }
             .navbar-toggler-icon {
                 display: inline-block;
                 width: 1.5em;
@@ -303,37 +345,66 @@
                 list-style: none;
             }
             .padding-menu-top{
-                padding-left: 20px;
-                padding-right: 20px
+                padding-left: 0.4rem;
+                padding-right: 0.4rem
             }
             .text-menu-top {
-                font-size: 1rem;
-                font-weight: 300;
-                font-family: 'Lato', sans-serif;
+                font-size: 0.8rem;
+                font-weight: 400;
+                font-family: 'Montserrat', sans-serif;
+                color: #000;
             }
             .title-text-slider{
-                font-size: 2.5rem;
-                font-weight: 700;
+                font-size: 3.5rem;
+                font-weight: 900;
                 color: #fff;
-                font-family: 'Lato', sans-serif;
+                font-family: 'catamaran', sans-serif;
+                letter-spacing: 5px;
                 line-height: 2.5rem;
+                order: 1;
             }
             .content-text-slider{
-                font-size: 1.7rem;
-                font-weight: 400;
+                font-size: 1.5rem;
+                font-weight: 200;
                 color: #fff;
-                font-family: 'Lato', sans-serif;
+                font-family: 'catamaran', sans-serif;
                 line-height: 2.5rem;
+                order: 2;
             }
             .text-slider-position{
-                top: 30%;
+                height: 100vh;
                 width: 100%;
                 position: absolute;
                 z-index: 5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: wrap;
             }
             .arrow-slider {
                 font-size: 2.5rem;
                 color: #fff;
+            }
+
+            .lebar-logo-menu{
+                width: 50%;
+            }
+            .bg-putih-menu{
+                background-color: rgba(255,255,255,.4);
+            }
+            .pagination-active{
+                color: #fff !important;
+                opacity: 1 !important;
+            }
+            .pagination{
+                color: #fff;
+                opacity: 0.4;
+            }
+            break{
+                flex-basis: 100%;
+                width: 0px; 
+                height: 0px; 
+                overflow: hidden;
             }
 
             @media (max-width: 500px) {
@@ -345,6 +416,7 @@
                     font-size: 0.8rem;
                     font-weight: 700;
                     font-family: 'Lato', sans-serif;
+                    color: #fff;
                 }
                 .title-text-slider{
                     font-size: 1.5rem;
@@ -370,10 +442,13 @@
                     font-size: 1rem;
                     color: #fff;
                 }
+                .lebar-logo-menu{
+                    width: 100%;
+                }
             }
         </style>
 
-        <script>
+        <!-- <script>
             var slideIndex = 1;
             showDivs(slideIndex);
 
@@ -391,9 +466,77 @@
             }
             x[slideIndex-1].style.display = "block";
             }
+        </script> -->
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+            
+            function currentDiv(n) {
+            showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" pagination-active", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " pagination-active";
+            }
+        </script>
+
+        ​<script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+            }
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#menu-color").hide();
+                $(function toTop() {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 200) {
+                            $('#menu-color').addClass("bg-putih-menu");
+                        } else {
+                            $('#menu-color').removeClass("bg-putih-menu");
+                        }
+                    });
+
+                    $('#pullTop').click(function () {
+                        $('body,html').animate({
+                            scrollTop: 0
+                        }, 300);
+                        return false;
+                    });
+                });
+            });
         </script>
 				
-		<!-- <script src="https://www.rumahhosting.com/assets/js/jquery.min.js"></script>
+		<script src="https://www.rumahhosting.com/assets/js/jquery.min.js"></script>
         <script src="https://www.rumahhosting.com/assets/js/jquery.plugin.min.js"></script>
         <script src="https://www.rumahhosting.com/assets/js/bootstrap.min.js"></script>
         <script src="https://www.rumahhosting.com/assets/js/jquery.flexslider-min.js"></script>
@@ -406,9 +549,7 @@
         <script src="https://www.rumahhosting.com/assets/js/twitterFetcher_v10_min.js"></script>
         <script src="https://www.rumahhosting.com/assets/js/lightbox.min.js"></script>
         <script src="https://www.rumahhosting.com/assets/js/jquery.countdown.min.js"></script>
-        <script src="https://www.rumahhosting.com/assets/js/scripts.js"></script> -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://www.rumahhosting.com/assets/js/scripts.js"></script>
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
