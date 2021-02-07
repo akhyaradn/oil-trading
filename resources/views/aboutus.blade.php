@@ -30,10 +30,10 @@
     </head>
     <body>
 		<div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(0,0,0,.2);">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(255,255,255,.7);">
                 <div class="container-fluid mx-md-5">
-                  <div class="navbar-brand" href="index.html" style="width: 50%">
-                    <img src="image/logos.png" class="lebar-logo-menu">
+                  <div class="navbar-brand" href="index.html" style="width: 15%">
+                    <img src="{{asset('asset/image/logo3.png')}}" class="lebar-logo-menu">
                   </div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
               </nav>
 				<div class="container-fluid p-0">
                     <div class="row text-left" style="position: relative;">
-                        <img src="image/banner-about.jpg" width="100%" alt="">
+                        <img src="{{asset('asset/image/banner-about.jpg')}}" width="100%" alt="">
                         <div class="" style="position: absolute;bottom:15%;width: 100%;">
                             <div class="container">
                                 <div class="mx-5 col-12" style="color: #fff;font-size: 2rem;">
@@ -88,7 +88,7 @@
                     <div class="container">
 					<div class="row mt-5 mx-5">
                         <div class="col-md-5">
-                            <img src="image/aboutus-mid1.jfif" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);width: 100%;object-fit: cover;" alt="">
+                            <img src="{{asset('asset/image/about1.jpg')}}" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);width: 100%;object-fit: cover;" alt="">
                         </div>
                         <div class="col-md-7" style="text-align: justify;">
                             <span style="font-size: 1.7rem;font-weight: 700;font-family: 'Lato', sans-serif;">About Prodigy</span><br><br>
@@ -103,12 +103,12 @@
                             <span style="font-size: 1rem;font-weight: 400;font-family: 'Lato', sans-serif;">Our company handles all logistic requirement from loading process to the discharge process in customers' appointed unloading area.</span><br><br>
                         </div>
                         <div class="col-md-5">
-                            <img src="image/aboutus-mid2.jfif" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);width: 100%;object-fit: cover;" alt="">
+                            <img src="{{asset('asset/image/about2.jpg')}}" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);width: 100%;object-fit: cover;" alt="">
                         </div>
                     </div>
                     <div class="row mt-5 mb-5 mx-5">
                         <div class="col-md-5">
-                            <img src="image/aboutus-mid3.jfif" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);width: 100%;object-fit: cover;" alt="">
+                            <img src="{{asset('asset/image/about3.jpg')}}" style="border-radius: 12px;box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);width: 100%;object-fit: cover;" alt="">
                         </div>
                         <div class="col-md-7">
                             <span style="font-size: 1.7rem;font-weight: 700;font-family: 'Lato', sans-serif;">Our Values</span><br><br>
@@ -284,7 +284,7 @@
                         font-size: 0.9rem;
                         font-weight: 300;
                         font-family: 'Lato', sans-serif;
-                        color: #fff;
+                        color: #000;
                     }
                     .title-text-slider{
                         font-size: 2.5rem;

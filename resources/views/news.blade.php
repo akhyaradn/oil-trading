@@ -30,10 +30,10 @@
     </head>
     <body>
 		<div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(255,255,255,.7);">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(255,255,255,.7);">
                 <div class="container-fluid mx-md-5">
                   <div class="navbar-brand" href="index.html" style="width: 15%">
-                    <img src="image/logo3.png" class="lebar-logo-menu">
+                    <img src="{{asset('asset/image/logo3.png')}}" class="lebar-logo-menu">
                   </div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
               </nav>
 				<div class="container-fluid p-0">
                     <div class="row text-left" style="position: relative;">
-                        <img src="image/banner-news.jpg" width="100%" alt="">
+                        <img src="{{asset('asset/image/banner-news.jpg')}}" width="100%" alt="">
                         <div class="" style="position: absolute;bottom:15%;width: 100%;">
                             <div class="container">
                                 <div class="mx-5" style="color: #fff;font-size: 2rem;">
@@ -94,7 +94,7 @@
                                 <span style="font-size: 1.2rem;font-weight: 700;font-family: 'Lato', sans-serif;">MINYAK SOLAR/HSD (High Speed Diesel) :</span>
                             </div>
                             <div class="col-md-12 py-1">
-                               <img src="image/jan2.PNG" alt="">
+                               <img src="{{asset('asset/image/jan2.PNG')}}" alt="">
                             </div>
                             <div class="col-md-12 py-1">
                                 <span style="font-size: 0,8rem;font-weight: 400;font-family: 'Lato', sans-serif;">(Vat and PPn, PPH dan PBBKB excluded)</span>
@@ -123,7 +123,7 @@
                                 <span style="font-size: 1.2rem;font-weight: 700;font-family: 'Lato', sans-serif;">MINYAK SOLAR/HSD (High Speed Diesel) :</span>
                             </div>
                             <div class="col-md-12 py-1">
-                               <img src="image/jan1.PNG" alt="">
+                               <img src="{{asset('asset/image/jan1.PNG')}}" alt="">
                             </div>
                             <div class="col-md-12 py-1">
                                 <span style="font-size: 0,8rem;font-weight: 400;font-family: 'Lato', sans-serif;">(Vat and PPn, PPH dan PBBKB excluded)</span>
@@ -152,7 +152,7 @@
                                 <span style="font-size: 1.2rem;font-weight: 700;font-family: 'Lato', sans-serif;">MINYAK SOLAR/HSD (High Speed Diesel) :</span>
                             </div>
                             <div class="col-md-12 py-1">
-                               <img src="image/des2.PNG" alt="">
+                               <img src="{{asset('asset/image/des2.PNG')}}" alt="">
                             </div>
                             <div class="col-md-12 py-1">
                                 <span style="font-size: 0,8rem;font-weight: 400;font-family: 'Lato', sans-serif;">(Vat and PPn, PPH dan PBBKB excluded)</span>
@@ -181,7 +181,7 @@
                                 <span style="font-size: 1.2rem;font-weight: 700;font-family: 'Lato', sans-serif;">MINYAK SOLAR/HSD (High Speed Diesel) :</span>
                             </div>
                             <div class="col-md-12 py-1">
-                               <img src="image/des1.PNG" alt="">
+                               <img src="{{asset('asset/image/des1.PNG')}}" alt="">
                             </div>
                             <div class="col-md-12 py-1">
                                 <span style="font-size: 0,8rem;font-weight: 400;font-family: 'Lato', sans-serif;">(Vat and PPn, PPH dan PBBKB excluded)</span>
@@ -210,7 +210,7 @@
                                 <span style="font-size: 1.2rem;font-weight: 700;font-family: 'Lato', sans-serif;">MINYAK SOLAR/HSD (High Speed Diesel) :</span>
                             </div>
                             <div class="col-md-12 py-1">
-                               <img src="image/nov2.PNG" alt="">
+                               <img src="{{asset('asset/image/nov2.PNG')}}" alt="">
                             </div>
                             <div class="col-md-12 py-1">
                                 <span style="font-size: 0,8rem;font-weight: 400;font-family: 'Lato', sans-serif;">(Vat and PPn, PPH dan PBBKB excluded)</span>
@@ -239,7 +239,7 @@
                                 <span style="font-size: 1.2rem;font-weight: 700;font-family: 'Lato', sans-serif;">MINYAK SOLAR/HSD (High Speed Diesel) :</span>
                             </div>
                             <div class="col-md-12 py-1">
-                               <img src="image/nov1.PNG" alt="">
+                               <img src="{{asset('asset/image/nov1.PNG')}}" alt="">
                             </div>
                             <div class="col-md-12 py-1">
                                 <span style="font-size: 0,8rem;font-weight: 400;font-family: 'Lato', sans-serif;">(Vat and PPn, PPH dan PBBKB excluded)</span>
@@ -268,7 +268,7 @@
                                 <span style="font-size: 1.2rem;font-weight: 700;font-family: 'Lato', sans-serif;">MINYAK SOLAR/HSD (High Speed Diesel) :</span>
                             </div>
                             <div class="col-md-12 py-1">
-                               <img src="image/okt2.PNG" alt="">
+                               <img src="{{asset('asset/image/okt2.PNG')}}" alt="">
                             </div>
                             <div class="col-md-12 py-1">
                                 <span style="font-size: 0,8rem;font-weight: 400;font-family: 'Lato', sans-serif;">(Vat and PPn, PPH dan PBBKB excluded)</span>
@@ -297,7 +297,7 @@
                                 <span style="font-size: 1.2rem;font-weight: 700;font-family: 'Lato', sans-serif;">MINYAK SOLAR/HSD (High Speed Diesel) :</span>
                             </div>
                             <div class="col-md-12 py-1">
-                               <img src="image/okt1.PNG" alt="">
+                               <img src="{{asset('asset/image/okt1.PNG')}}" alt="">
                             </div>
                             <div class="col-md-12 py-1">
                                 <span style="font-size: 0,8rem;font-weight: 400;font-family: 'Lato', sans-serif;">(Vat and PPn, PPH dan PBBKB excluded)</span>
@@ -458,7 +458,7 @@
                         font-size: 0.9rem;
                         font-weight: 300;
                         font-family: 'Lato', sans-serif;
-                        color: #fff;
+                        color: #000;
                     }
                     .title-text-slider{
                         font-size: 2.5rem;

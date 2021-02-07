@@ -30,10 +30,10 @@
     </head>
     <body>
 		<div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(255,255,255,.7);">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(255,255,255,.7);">
                 <div class="container-fluid mx-md-5">
                   <div class="navbar-brand" href="index.html" style="width: 15%">
-                    <img src="image/logo3.png" class="lebar-logo-menu">
+                    <img src="{{asset('asset/image/logo3.png')}}" class="lebar-logo-menu">
                   </div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -296,7 +296,7 @@
                         font-size: 0.9rem;
                         font-weight: 300;
                         font-family: 'Lato', sans-serif;
-                        color: #fff;
+                        color: #000;
                     }
                     .title-text-slider{
                         font-size: 2.5rem;

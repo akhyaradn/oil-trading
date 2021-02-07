@@ -39,7 +39,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top menu-color" id="menu-color" style="background-color: rgba(255,255,255,.7);">
                 <div class="container-fluid mx-md-5">
                   <div class="navbar-brand" href="index.html" style="width: 15%">
-                    <img src="image/logo3.png" class="lebar-logo-menu">
+                    <img src="{{asset('asset/image/logo3.png')}}" class="lebar-logo-menu">
                   </div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -138,21 +138,21 @@
                             </div>
                         </div>
                         <!-- <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div> -->
-                        <img class="d-block w-100" src="image/slide1.jpg" alt="First slide">
+                        <img class="d-block w-100" src="{{asset('asset/image/slide1.jpg')}}" alt="First slide">
                       </div>
                       <div class="carousel-item">
                         <div class="text-center text-slider-position col-xs-12 animate__animated animate__fadeInDown animate__delay-1s">
                             <span class="title-text-slider">EFFICIENT</span><br><br>
                         </div>
                         <!-- <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div> -->
-                        <img class="d-block w-100" src="image/slide2.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="{{asset('asset/image/slide2.jpg')}}" alt="Second slide">
                       </div>
                       <div class="carousel-item">
                         <div class="text-center text-slider-position col-xs-12 animate__animated animate__fadeInDown animate__delay-1s">
                             <span class="title-text-slider">RELIABLE</span><br><br>
                         </div>
                         <!-- <div style="background-color: black;opacity: 0.4;width: 100%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;z-index: 3;"></div> -->
-                        <img class="d-block w-100" src="image/slide3.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="{{asset('asset/image/slide3.jpg')}}" alt="Third slide">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -169,7 +169,7 @@
                 <div class="container-fluid p-0 d-none d-md-block">
 					      <div class="row" style="display: flex;align-items: center;">
                         <div class="col-6">
-                            <img src="image/image12.jpg" width="100%" alt="" style="">
+                            <img src="{{asset('asset/image/image12.jpg')}}" width="100%" alt="" style="">
                         </div>
                         <div class="col-6">
                             <div class="row">
@@ -200,7 +200,7 @@
                 <div class="container-fluid mt-5 mb-5 d-block d-md-none">
 					<div class="row" style="display: flex;align-items: center;">
                         <div class="col-md-5 col-xs-12 mb-2">
-                            <img src="image/image12.jpg" width="100%" alt="" style="box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);border-radius: 12px;">
+                            <img src="{{asset('asset/image/image12.jpg')}}" width="100%" alt="" style="box-shadow: -1px 0 24px 0 rgba(0,0,0,.25);border-radius: 12px;">
                         </div>
 						<div class="col-md-7 pt-3 col-xs-12" style="box-shadow: -1px 0 24px 0 rgba(0,0,0,.25)">
                             <!-- <img src="logo-prodigy.png" width="50%"><br><br> -->
